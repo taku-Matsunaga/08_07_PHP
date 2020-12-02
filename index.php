@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-    <script src="js/mychart.js"></script>
+  <script src="js/mychart.js"></script>
 
   <title>入力画面</title>
 </head>
@@ -47,6 +47,18 @@
       </label>
     </div>
 
+    <div>Lo-Fi HIP-HOPは好き？
+      <label for="lofiDislike">
+        <input type="radio" name="lofi" id="lofiDislike" value="1">嫌い
+      </label>
+      <label for="elecNormal">
+        <input type="radio" name="lofi" id="lofiNormal" value="5">普通
+      </label>
+      <label for="elecLike">
+        <input type="radio" name="lofi" id="lofiLike" value="10">好き
+      </label>
+    </div>
+
     <div>メタルは好き？
       <label for="metalDislike">
         <input type="radio" name="metal" id="metalDislike" value="1">嫌い
@@ -58,14 +70,34 @@
         <input type="radio" name="metal" id="metalLike" value="10">好き
       </label>
     </div>
+
+    <div>ロックは好き？
+      <label for="rockDislike">
+        <input type="radio" name="rock" id="rockDislike" value="1">嫌い
+      </label>
+      <label for="metalNormal">
+        <input type="radio" name="rock" id="rockNormal" value="5">普通
+      </label>
+      <label for="metalLike">
+        <input type="radio" name="rock" id="rockLike" value="10">好き
+      </label>
+    </div>
     <div>
       <button>Submit</button>
     </div>
   </form>
 
+  <div>
+    <a href="delete.php">初期化する</a>
+  </div>
+
   <div style="width: 50%; height: 50%;">
     <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
-</div>
+  </div>
+
+  <div id="insertVideo">
+
+  </div>
 
 </body>
 
