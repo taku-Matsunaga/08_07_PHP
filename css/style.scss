@@ -1,0 +1,54 @@
+.tac{
+  text-align: center;
+}
+
+form{
+  background-color: rgb(255, 225, 197);
+
+  h1{
+    text-align: center;
+  }
+}
+
+.checkbox{
+  font-size: 1.5rem;
+  margin: 20px auto;
+  border: 1px dotted #242424;
+  width: 50%;
+  text-align: center;
+}
+
+.submitBtn{
+  text-align: center;
+
+  button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}
+
+.clearBtn{
+  text-align: center;
+  margin: 20px;
+  
+  a{
+    background-color: rgb(168, 230, 255);
+    color: #242424;
+    text-decoration: none;
+    border: 1px solid #242424;
+    padding: 5px;
+    font-weight: bold;
+  }
+}
+
+.graph{
+  margin: auto;
+}
+
+.videoBox{
+  text-align: center;
+}

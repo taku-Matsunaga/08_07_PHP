@@ -9,3 +9,4 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 header("Location:index.php");
+?>

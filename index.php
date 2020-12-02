@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
   <script src="js/mychart.js"></script>
@@ -14,16 +15,16 @@
 <body>
   <form action="create.php" method="POST">
     <div>
-      <h1>アンケートフォーム</h1>
+      <h1>音楽嗜好チェックフォーム</h1>
     </div>
-    <div>
+    <div class="tac">
       Name: <input type="text" name="name">
     </div>
-    <div>
+    <div class="tac">
       Email: <input type="email" name="email">
     </div>
 
-    <div>JAZZは好き？
+    <div class="checkbox">JAZZは好き？
       <label for="jazzDislike">
         <input type="radio" name="jazz" id="jazzDislike" value="1">嫌い
       </label>
@@ -35,7 +36,7 @@
       </label>
     </div>
 
-    <div>エレクトロニックは好き？
+    <div class="checkbox">エレクトロニックは好き？
       <label for="elecDislike">
         <input type="radio" name="elec" id="elecDislike" value="1">嫌い
       </label>
@@ -47,7 +48,7 @@
       </label>
     </div>
 
-    <div>Lo-Fi HIP-HOPは好き？
+    <div class="checkbox">Lo-Fi HIP-HOPは好き？
       <label for="lofiDislike">
         <input type="radio" name="lofi" id="lofiDislike" value="1">嫌い
       </label>
@@ -59,7 +60,7 @@
       </label>
     </div>
 
-    <div>メタルは好き？
+    <div class="checkbox">メタルは好き？
       <label for="metalDislike">
         <input type="radio" name="metal" id="metalDislike" value="1">嫌い
       </label>
@@ -71,7 +72,7 @@
       </label>
     </div>
 
-    <div>ロックは好き？
+    <div class="checkbox">ロックは好き？
       <label for="rockDislike">
         <input type="radio" name="rock" id="rockDislike" value="1">嫌い
       </label>
@@ -82,23 +83,28 @@
         <input type="radio" name="rock" id="rockLike" value="10">好き
       </label>
     </div>
-    <div>
+    <div class="submitBtn">
       <button>Submit</button>
     </div>
   </form>
 
-  <div>
-    <a href="delete.php">初期化する</a>
+  <div class="clearBtn">
+    <a href="delete.php" onclick="deleteStorage()">初期化する</a>
   </div>
 
-  <div style="width: 50%; height: 50%;">
+  <div class="graph" style="width: 50%; height: 50%;">
     <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
   </div>
 
-  <div id="insertVideo">
+  <div class="videoBox" id="insertVideo">
 
   </div>
 
+  <script>
+    function deleteStorage(){
+      localStorage.removeItem('mydata');
+    }
+  </script>
 </body>
 
 </html>

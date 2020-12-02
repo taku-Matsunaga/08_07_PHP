@@ -3,11 +3,11 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $jazz = $_POST["jazz"];
-$lofi = $_POST["lofi"];
 $elec = $_POST["elec"];
+$lofi = $_POST["lofi"];
 $metal = $_POST["metal"];
 $rock = $_POST["rock"];
-$write_data = "{$name},{$email},{$jazz},{$lofi},{$elec},{$metal},{$rock}\n";
+$write_data = "{$name},{$email},{$jazz},{$elec},{$lofi},{$metal},{$rock}\n";
 
 $file = fopen('data/storage.csv', 'a');
 flock($file, LOCK_EX);
