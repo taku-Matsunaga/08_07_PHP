@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script src="js/mychart.js"></script>
+
   <title>入力画面</title>
 </head>
 
@@ -58,6 +62,11 @@
       <button>Submit</button>
     </div>
   </form>
+
+  <div style="width: 50%; height: 50%;">
+    <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
+</div>
+
 </body>
 
 </html>
