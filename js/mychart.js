@@ -41,7 +41,7 @@ function drawBarChart(data) {
   var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
-      labels: ["JAZZ", "Lo-Fi", "ELECTRONIC", "METAL", "ROCK"],
+      labels: ["JAZZ", "ELECTRONIC","Lo-Fi", "METAL", "ROCK"],
       datasets: [
         // { label: tmpLabels, data: tmpData1, backgroundColor: "red" },
         {
