@@ -166,7 +166,7 @@ function createYoutube() {
     console.log(random);
     console.log(rockSet[random]);
     document.getElementById('insertVideo').innerHTML = rockHTML;
-  }else{
+  }else if(tmpData2[mydata] == 1 && tmpData3[mydata] == 1 && tmpData4[mydata] == 1 && tmpData5[mydata] == 1 && tmpData6[mydata] == 1){
     document.getElementById('insertVideo').innerHTML = '<p>音楽の相性が合わないようです</p>';
   }
 
